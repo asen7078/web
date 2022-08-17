@@ -1,0 +1,288 @@
+@import "reset.css";
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 1250px;
+    margin: 0 auto;
+    height: 100vh;
+    
+}
+
+header{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: fit-content;
+    align-items: center;
+    box-shadow: 0 20px 16px -16px rgba(0,0,0,0.2);
+    
+    
+}
+.wrapper{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.block{
+    display: block;
+    position: relative;
+    
+}
+
+
+.one{
+    background: #FFFBCA;
+    width: 200px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.two{
+    width: 600px;
+    height: fit-content;
+    
+
+}
+
+.three{
+    width: 275px;
+    height: fit-content;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    
+}
+nav{
+    display: block;
+    position: relative;
+    background: #FFFBCA;
+    width: 200px;
+    height: 100%;
+    box-shadow: inset 0 20px 16px -16px rgba(0,0,0,0.2);
+    
+    
+}
+main{
+    display: block;
+    position: relative;
+    
+    width: 600px;
+    height: fit-content;
+    
+}
+aside{
+    display: block;
+    position: relative;
+    width: 275px;
+    height: 100vh;
+    
+}
+
+.logo{
+    width: 80%;
+}
+.search{
+    background: #F8F8F8;
+}
+.search-img{
+    width: 60%;
+}
+
+
+
+
+form {
+  position: relative;
+  width: 100%;
+  
+}
+input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  background: #F8F8F8;
+  color: #9E9C9C;
+}
+button {
+  position: absolute; 
+  top: 0;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #F8F8F8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recipe{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F6921E;
+    border-radius: 15px;
+    background: #FFFBCA;
+    width: 150px;
+    font-size: 18.6px;
+    line-height: 25px;
+    gap: 10px;
+}
+.plus{
+    color: #F6921E;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 32px;
+    
+}
+.account{
+    width: 45px;
+    
+    
+}
+.bell{
+    width: 25px;
+    
+    
+    
+}
+.ad{
+    margin-top: 50px;
+    border: 2px solid #195821;
+}
+.way{
+    display: block;
+    position: relative;
+    margin-top: 50px;
+}
+.home{
+    margin-right: 5px;
+    
+    width: 19px;
+}
+.title{
+    font-size: 30pt;
+    margin-top: 40px;
+    text-align: center;
+}
+.actions{
+    display: flex;
+    
+    position: relative;
+    height: 25px;
+    
+    margin-left: 40px;
+    width: 220px;
+    justify-content: space-between;
+}
+.ready-meal{
+    width: 100%;
+    height: 374px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.text{
+    margin-top: 25px;
+    
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+    margin-top: 25px;
+    
+
+}
+.menu{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+.list{
+    width: 110px;
+}
+
+.list li{
+    font-size: 20px;
+    margin-bottom: 15px;
+    background: url('../img/pointers.svg') 90px no-repeat ;
+}
+.heart,.repost,.comments{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.col{
+    margin-left: 10px;
+}
+.steps{
+   border-radius: 20px; 
+   margin-bottom: 25px;
+   margin-top: 25px;
+}
+
+@media
+(max-width:768px){
+    .conteiner{
+        max-width: 768px;
+    }
+    .one{
+        width: 142px;
+    }
+    .two{
+        width: 300px;
+    }
+    .three{
+        width: 235px;
+    
+    }
+    .recipe{
+        width: 120px;
+        font-size: 16px;
+        line-height: 20px;
+        gap: 7px;
+    }
+    .plus{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .account{
+        width: 35px;
+    }
+    .bell{
+        width: 20px;
+    }
+    
+}
+@media  (max-width:500px)
+{
+    aside{
+        display: none;
+    }
+    .one{
+        min-width: 125px;
+    }
+    .two{
+        width:600px;
+    }
+    
+}
